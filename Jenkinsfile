@@ -1,4 +1,4 @@
-node {
+node('centos') {
     if(env.BRANCH_NAME == "develop") {      
     stage('SCM') {
     checkout scm
